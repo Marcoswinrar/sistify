@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { LoginComponent } from './login/login.component';
+import { LoggedOfGuard } from './core/auth/guards/logged-of.guard';
+
+const routes: Routes = [
+  { path: '', component: LoginComponent, canActivate: [LoggedOfGuard]},
+  { path: 'user', loadChildren: './user/user.module#UserModule'},
+  { path: '**', redirectTo: '' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,0 +1,11 @@
+<nav mat-tab-nav-bar class="nav">
+    <a *ngFor='let tab of menus$ | async'
+      mat-tab-link
+      (click)= 'activeLink = tab.name'
+      #rla='routerLinkActive'
+      [active]='rla.isActive'
+      routerLinkActive
+      routerLink='{{tab.path}}'
+      class='nav-item'> {{ tab.name }}</a>
+</nav>
+<router-outlet>

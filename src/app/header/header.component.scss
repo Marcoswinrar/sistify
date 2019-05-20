@@ -1,0 +1,20 @@
+.sistify-header {
+  background: black;
+  color: white;
+}
+.sistify-header__title {
+  font-size: 38px;
+}
+
+.sistify-header__profile {
+  &:hover {
+    color: #1db954;
+    cursor: pointer
+  }
+
+  .sistify-header__profile--button {
+    width: 36px;
+    height: 36px;
+    font-size: 36px;
+  }
+}
