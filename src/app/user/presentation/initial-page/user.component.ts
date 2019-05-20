@@ -6,7 +6,7 @@ import { finalize } from 'rxjs/operators';
 
 import { Menu } from '../../domain/models/menu';
 import { UserPresenter } from '../../domain/boundaries/user.presenter';
-import { UserService } from '../../../core/auth/user.service';
+import { UserService } from '../../../auth/user.service';
 
 /**
  * This component receives REDIRECT_URI from oauth.
@@ -21,18 +21,18 @@ import { UserService } from '../../../core/auth/user.service';
 export class UserComponent implements OnInit {
 
   menus$: Observable<Menu[]>;
-  
+
   constructor(
     private userService: UserService,
     private presenter: UserPresenter,
     private router: Router
   ) { }
-  
+
   /**
    * TODO: Need better logic ;D
    */
   ngOnInit() {
-    this.userService.getAuthUserParams(); 
+    this.userService.getAuthUserParams();
     this.menus$ = this.presenter.loadMenus()
       .pipe(finalize(() => this.router.navigate(['/user/playlists'])));
   }

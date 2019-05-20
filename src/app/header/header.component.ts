@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { User } from '../user/domain/models/user';
-import { UserService } from '../core/auth/user.service';
+import { UserService } from '../auth/user.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent{ 
+export class HeaderComponent{
 
   constructor(
     private userService: UserService,

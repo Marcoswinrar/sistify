@@ -1,0 +1,22 @@
+<mat-card class='sistify-user-card'>
+  <mat-card-header>
+    <button
+      mat-card-avatar
+      mat-icon-button
+      matTooltip='Return to user playlist'
+      matTooltipPosition='above'
+      routerLink='user/playlists'>
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <mat-card-title class='sistify-user-card__name'>
+      {{ user?.display_name }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{ user?.followers?.total > 0 ? 'user?.followers?.total' : 'No followers' }}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <h3>Country: {{ user?.country}}</h3>
+    <h3>Email: {{ user?.email }}</h3>
+  </mat-card-content>
+</mat-card>

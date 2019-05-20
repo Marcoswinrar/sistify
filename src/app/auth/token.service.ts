@@ -3,7 +3,7 @@ import { Inject, Injectable } from '@angular/core';
 const KEY = 'Authentication';
 
 @Injectable()
-export class TokenService { 
+export class TokenService {
 
   /**
    * Verify if have an token in localstorage.

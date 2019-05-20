@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { MaterialUiModule } from '../core/material/material-ui.module';
 import { LoginComponent } from './login.component';
-import { AuthService } from '../core/auth/auth.service';
-import { TokenService } from '../core/auth/token.service';
-import { HashService } from '../core/auth/hash.service';
+import { AuthService } from '../auth/auth.service';
+import { TokenService } from '../auth/token.service';
+import { HashService } from '../auth/hash.service';
 
 @NgModule({
   imports: [

@@ -9,6 +9,9 @@ import { UserRouting } from './user-routing.module';
 import { UserPresenter } from '../domain/boundaries/user.presenter';
 import { DefaultUserPresenter } from './presenter/default-user.presenter';
 import { UserProfileComponent } from './profile/user-profile.component';
+import { UserCardComponent } from './card/user-card/user-card.component';
+import { PlaylistCardComponent } from './card/playlist-card/playlist-card.component';
+import { UserPlaylistDetailComponent } from './detail/user-playlist-detail.component';
 
 @NgModule({
   imports: [
@@ -20,7 +23,10 @@ import { UserProfileComponent } from './profile/user-profile.component';
     UserComponent,
     UserPlaylistComponent,
     UserNewPlaylistComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    UserCardComponent,
+    PlaylistCardComponent,
+    UserPlaylistDetailComponent
   ],
   providers: [
     {

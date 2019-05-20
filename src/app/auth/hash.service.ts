@@ -6,7 +6,7 @@ import { Location } from '@angular/common';
 export class HashService {
 
   // extracted params after authentication.
-  params = { };  
+  params = { };
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -14,14 +14,14 @@ export class HashService {
   ) { }
 
   /**
-   * If has fragments 
+   * If has fragments
    * Returns hash params of active route.
    */
   getHashParams() {
     if (this.activatedRoute.snapshot.fragment) {
       const fragments = this.activatedRoute.snapshot.fragment.split('&');
       fragments.map(fragment => {
-        let param = fragment.split('=');
+        const param = fragment.split('=');
         this.params[param[0]] = param[1];
       });
     }

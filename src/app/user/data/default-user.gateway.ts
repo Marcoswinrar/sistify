@@ -11,12 +11,16 @@ export class DefaultUserGateway implements UserGateway {
 
   constructor(private repository: UserRepository) { }
 
-  getUser(){
+  getUser() {
     return this.repository.getUser();
   }
 
   getMenus() {
-    return this.repository.getMenus()
+    return this.repository.getMenus();
+  }
+
+  getPlaylists() {
+    return this.repository.getUserPlaylists();
   }
 
 }

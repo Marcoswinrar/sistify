@@ -1,27 +1,28 @@
 import { Injectable } from '@angular/core';
 
-import { TokenService } from 'src/app/core/auth/token.service';
-import { HashService } from 'src/app/core/auth/hash.service';
+import { TokenService } from 'src/app/auth/token.service';
+import { HashService } from 'src/app/auth/hash.service';
 
 /**
  * Provides data from user(token infos and session).
  */
 @Injectable({providedIn: 'root'})
-export class UserService { 
+export class UserService {
 
   constructor(
     private token: TokenService,
     private hash: HashService
   ) { }
-  
+
   /**
    * Get auth data from hash and set token
    * if he have a defined value.
    */
   getAuthUserParams() {
-    const user = this.hash.getHashParams();
-    if(user['access_token'])
-      this.setToken(user['access_token']);
+    const userParam = this.hash.getHashParams();
+    if (userParam['access_token']) {
+      this.setToken(userParam['access_token']);
+    }
   }
 
   /**
