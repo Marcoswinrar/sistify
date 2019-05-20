@@ -1,3 +1,4 @@
+import { Tracks } from '../track/tracks';
 
 export class Playlist {
 
@@ -7,4 +8,5 @@ export class Playlist {
   description: string;
   public: boolean;
   images: any;
+  tracks: Tracks;
 }

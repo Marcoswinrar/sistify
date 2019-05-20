@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { Observable, of } from 'rxjs';
 
 import { User } from '../domain/models/user';
@@ -34,6 +35,32 @@ export class UserRepository {
    */
   getUserPlaylists(): Observable<PlaylistList> {
     return this.http.get<PlaylistList>(this.API + '/me/playlists', {headers : this.headers});
+  }
+
+
+  /**
+   * Return playlist
+   * @param id identification number of playlist.
+   */
+  getPlaylist(id: string): Observable<Playlist> {
+    return this.http.get<Playlist>(this.API + '/playlists/' + id, {headers: this.headers});
+  }
+
+  /**
+   * Return all tracks of playlist.
+   * @param url to fetch data.
+   */
+  getTracks(url: string): Observable<any> {
+    return this.http.get(url, {headers: this.headers});
+  }
+
+  /**
+   * Delete tracks from playlist
+   * @param url to api to delete.
+   * @param tracks list of tracks to delete.
+   */
+  deleteTracks(url: string, tracks: any) {
+    this.http.delete(url + { body : { tracks }});
   }
 
   /**

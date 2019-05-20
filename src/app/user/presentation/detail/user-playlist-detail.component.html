@@ -1,1 +1,26 @@
-<h1>Funciona</h1>
+<div
+  class="content-container"
+  fxLayoutGap='16px'
+  fxLayout='row'
+  fxLayout.lt-md='column'>
+  <div fxflex='45'>
+    <mat-card>
+      <img
+      mat-card-image
+      src="{{playlist?.images[0]?.url}}"
+      class='sistify-playlist-detail__img'>
+      <mat-card-header>
+        <mat-card-title>{{playlist?.name}}</mat-card-title>
+        <mat-card-subtitle>{{playlist?.owner.display_name}}</mat-card-subtitle>
+        <mat-card-subtitle>Musics: {{playlist?.tracks?.total}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>
+  <div fxFlex='55'>
+    <div *ngIf='(tracks$ | async) as tracks' fxFlex='100'>
+      <div *ngFor='let track of tracks.items'>
+        <sistify-detail-music [item]='track'></sistify-detail-music>
+      </div>
+    </div>
+  </div>
+</div>

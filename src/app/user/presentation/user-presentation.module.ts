@@ -12,6 +12,7 @@ import { UserProfileComponent } from './profile/user-profile.component';
 import { UserCardComponent } from './card/user-card/user-card.component';
 import { PlaylistCardComponent } from './card/playlist-card/playlist-card.component';
 import { UserPlaylistDetailComponent } from './detail/user-playlist-detail.component';
+import { PlaylistDetailMusicComponent } from './detail/music/playlist-detail-music.component';
 
 @NgModule({
   imports: [
@@ -26,6 +27,7 @@ import { UserPlaylistDetailComponent } from './detail/user-playlist-detail.compo
     UserProfileComponent,
     UserCardComponent,
     PlaylistCardComponent,
+    PlaylistDetailMusicComponent,
     UserPlaylistDetailComponent
   ],
   providers: [

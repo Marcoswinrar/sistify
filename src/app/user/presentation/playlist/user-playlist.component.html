@@ -2,7 +2,7 @@
   <h3> User playlists </h3>
   <div *ngIf='(playlists$ | async) as playlists'>
     <div *ngFor='let playlist of playlists.items'>
-        <sistify-playlist-card [playlist]='playlist'></sistify-playlist-card>
+      <sistify-playlist-card [playlist]='playlist'></sistify-playlist-card>
     </div>
   </div>
 </div>
