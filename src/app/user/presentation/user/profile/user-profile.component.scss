@@ -1,0 +1,17 @@
+@import '../../../../colors.scss';
+
+.user-profile {
+
+  > .action {
+      font-weight: 600;
+
+      &:hover {
+        color: $primary;
+        cursor: pointer;
+      }
+  }
+
+  > .header {
+    font-weight: lighter;
+  }
+}

@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { UserPresenter } from '../../domain/boundaries/user.presenter';
-import { Playlist } from '../../domain/models/playlist/playlist';
+import { UserPresenter } from '../../../../domain/boundaries/user.presenter';
+import { Playlist } from '../../../../domain/models/playlist/playlist';
 import { Subject, concat, Observable } from 'rxjs';
 import { takeUntil, finalize } from 'rxjs/operators';
-import { Tracks } from '../../domain/models/track/tracks';
+import { Tracks } from '../../../../domain/models/track/tracks';
 
 @Component({
   templateUrl: './user-playlist-detail.component.html',

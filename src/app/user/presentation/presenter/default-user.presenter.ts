@@ -10,7 +10,8 @@ import { DeleteTracksInteractor } from '../../domain/interactors/delete-tracks.i
 
 /**
  * This is an external layer.The UI of app.
- * In this presenter you apply the logic of component(filters, sort, etc).
+ * In this presenter you apply the logic of
+ * component(filters, sort, etc) if necessary.
  */
 @Injectable()
 export class DefaultUserPresenter implements UserPresenter {

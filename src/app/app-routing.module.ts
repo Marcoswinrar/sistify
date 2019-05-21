@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
-import { LoggedOfGuard } from './auth/guards/logged-of.guard';
+import { LoggedOfGuard } from './core/auth/guards/logged-of.guard';
 
 const routes: Routes = [
   { path: '', component: LoginComponent, canActivate: [LoggedOfGuard]},

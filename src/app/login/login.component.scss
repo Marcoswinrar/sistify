@@ -1,0 +1,24 @@
+@import '../colors.scss';
+
+.sistify-login {
+  width: 90%;
+  margin: 10% auto;
+
+  > .title {
+      font-size: 70px;
+      color: $primary;
+      font-weight: 600;
+    }
+
+  > .authentication > .button {
+    width: 320px;
+    height: 55px;
+    border-radius: 55px;
+    font-size: 1em;
+
+    &:hover {
+      color: $white;
+      background: $black;
+    }
+  }
+}

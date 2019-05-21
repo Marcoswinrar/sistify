@@ -3,9 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { MaterialUiModule } from '../core/material/material-ui.module';
 import { LoginComponent } from './login.component';
-import { AuthService } from '../auth/auth.service';
-import { TokenService } from '../auth/token.service';
-import { HashService } from '../auth/hash.service';
 
 @NgModule({
   imports: [
@@ -13,11 +10,6 @@ import { HashService } from '../auth/hash.service';
     MaterialUiModule
   ],
   declarations: [LoginComponent],
-  exports: [LoginComponent],
-  providers: [
-    AuthService,
-    TokenService,
-    HashService
-  ]
+  exports: [LoginComponent]
 })
 export class LoginModule { }

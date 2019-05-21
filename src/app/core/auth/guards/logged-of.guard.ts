@@ -1,13 +1,8 @@
 import { Injectable } from '@angular/core';
-import { 
-  ActivatedRouteSnapshot,
-  CanActivate,
-  RouterStateSnapshot,
-  Router} from '@angular/router';
-  
-import { Observable } from 'rxjs'; 
+import { CanActivate, Router} from '@angular/router';
 
-import { UserService } from '../user.service';
+
+import { UserService } from '../services/user.service';
 
 @Injectable({providedIn: 'root'})
 export class LoggedOfGuard implements CanActivate {
@@ -19,11 +14,9 @@ export class LoggedOfGuard implements CanActivate {
 
   /**
    * if user is logged and navigate to login, app redirect to playlists.
-   * @param route 
-   * @param state 
    */
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | Observable<boolean> {
-    
+  canActivate() {
+
     if (this.userService.isLogged()) {
       this.router.navigate(['user']);
       return false;

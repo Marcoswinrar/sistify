@@ -1,0 +1,12 @@
+<div fxLayout='column' class='content-container user-profile'>
+  <div
+    fxFlex
+    fxLayoutGap='8px'
+    fxLayoutAlign='start center'
+    class='action'>
+    <mat-icon>arrow_back</mat-icon>
+    <span routerLink='user/playlists'> Return to playlists</span>
+  </div>
+  <h1 class="header"> User account </h1>
+  <sistify-user-card [user]='user'></sistify-user-card>
+</div>

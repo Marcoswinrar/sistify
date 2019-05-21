@@ -1,24 +1,25 @@
-.sistify-header {
-  background: black;
-  color: white;
-}
-.sistify-header__title {
-  font-size: 38px;
-}
+@import '../colors.scss';
 
-.sistify-header__profile {
-  &:hover {
-    color: #1db954;
-    cursor: pointer
+.sistify-header {
+  background: $black;
+  color: $white;
+
+  > .title { font-size: 38px }
+
+  > .profile {
+        &:hover {
+        color: $primary;
+        cursor: pointer;
+    }
   }
 
-  .sistify-header__profile--button {
-    width: 36px;
-    height: 36px;
-    font-size: 36px;
+  > .button {
+      width: 36px;
+      height: 36px;
+      font-size: 36px;
   }
 }
 
 ::ng-deep .mat-ink-bar {
-  background-color: #1db954 !important;
+  background-color: $primary !important;
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { UserGateway } from '../domain/boundaries/user.gateway';
-import { UserRepository } from './user.repository';
+import { UserRepository } from './user/user.repository';
 import { Tracks } from '../domain/models/track/tracks';
 
 /**

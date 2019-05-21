@@ -1,27 +1,34 @@
 <mat-toolbar class='sistify-header'>
-  <mat-toolbar-row 
-    class='sistify-header__row' 
-    *ngIf='!isLogged; else loggedIn'>
-    <span class="sistify-header__title">Sistify</span>
+  <mat-toolbar-row *ngIf='!isLogged; else loggedIn'>
+    <span class="title">Sistify</span>
   </mat-toolbar-row>
   <ng-template #loggedIn>
-    <mat-toolbar-row fxLayout='row'>
-      <span 
-        class="sistify-header__title"   
-        fxFlex>Sistify</span>
+    <mat-toolbar-row class='sistify-header'>
+      <span fxFlex class='title'>Sistify</span>
       <div
-        [matMenuTriggerFor]="appMenu"
-        class="sistify-header__profile" 
-        fxFlex='30' 
-        fxLayoutGap='8px'
-        fxLayoutAlign='start center'>
-        <mat-icon class="sistify-header__profile--button">account_circle</mat-icon>
+        fxFlex
+        fxFlex.gt-sm='30'
+        fxLayoutGap='6px'
+        fxLayoutAlign='start center'
+        [matMenuTriggerFor]='sisMenu'
+        class='profile'
+        (click)='changeArrowIndicator()'>
+        <mat-icon class='button'>account_circle</mat-icon>
         <span>Profile</span>
+        <mat-icon>
+          {{ arrowIndicator ? 'arrow_drop_down' : 'arrow_drop_up'}}
+        </mat-icon>
       </div>
-      <mat-menu #appMenu="matMenu">
-        <button mat-menu-item routerLink='user/profile'>Account</button>
-        <button mat-menu-item (click)='logout()'>Logout</button>
-      </mat-menu>      
+      <mat-menu #sisMenu='matMenu'>
+        <button
+          mat-menu-item
+          (click)='changeArrowIndicator()'
+          routerLink='user/profile'>Account</button>
+        <button
+          mat-menu-item
+          (click)='logout();
+          changeArrowIndicator()'>Logout</button>
+      </mat-menu>
     </mat-toolbar-row>
   </ng-template>
 </mat-toolbar>

@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 
-import { TokenService } from 'src/app/auth/token.service';
-import { HashService } from 'src/app/auth/hash.service';
+import { HashService } from 'src/app/core/auth/services/hash.service';
+import { TokenService } from './token.service';
 
 /**
  * Provides data from user(token infos and session).
  */
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class UserService {
 
   constructor(

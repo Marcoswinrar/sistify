@@ -6,7 +6,7 @@ import { finalize } from 'rxjs/operators';
 
 import { Menu } from '../../domain/models/menu';
 import { UserPresenter } from '../../domain/boundaries/user.presenter';
-import { UserService } from '../../../auth/user.service';
+import { UserService } from '../../../core/auth/services/user.service';
 
 /**
  * This component receives REDIRECT_URI from oauth.

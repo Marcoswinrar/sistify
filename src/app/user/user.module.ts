@@ -5,10 +5,10 @@ import { UserDomainModule } from './domain/user-domain.module';
 import { UserPresentationModule } from './presentation/user-presentation.module';
 
 @NgModule({
-  imports: [
+  imports : [
     UserDataModule,
     UserDomainModule,
     UserPresentationModule
-  ]  
+  ]
 })
 export class UserModule { }
