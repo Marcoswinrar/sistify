@@ -1,1 +1,39 @@
-<h1>User new playlist component works!</h1>
+<div class="content-container sistify-new-playlist">
+  <h1 class="header">Create new playlist</h1>
+  <div class="form" fxLayoutAlign='center center'>
+    <form 
+      fxFlex='85'
+      fxFlex.gt-sm='50'
+      fxLayout='column' 
+      class="form"
+      [formGroup]='playlistForm'> 
+      <mat-form-field class="field">
+        <input 
+          matInput
+          placeholder="Name of playlist" 
+          formControlName='name'>
+      </mat-form-field>
+      <mat-form-field class="field">
+        <textarea 
+          matInput
+          placeholder="Type one description" 
+          formControlName='description'></textarea>
+      </mat-form-field>
+      <label>Select type of your playlist.</label>
+      <mat-radio-group
+        fxLayoutGap='8px'
+        formControlName="public">
+        <mat-radio-button [value]="true">
+          Public
+        </mat-radio-button>
+        <mat-radio-button [value]="false">
+          Private
+        </mat-radio-button>
+      </mat-radio-group>
+      <div class="buttons">
+        <button mat-raised-button>Create</button>
+        <button mat-raised-button>Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

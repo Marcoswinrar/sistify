@@ -5,7 +5,8 @@ import { UserPresenter } from '../../../domain/boundaries/user.presenter';
 import { PlaylistList } from '../../../domain/models/playlist/playlist-list';
 
 @Component({
-  templateUrl: './user-playlist.component.html'
+  templateUrl: './user-playlists.component.html',
+  styleUrls: ['./user-playlists.component.scss']
 })
 export class UserPlaylistComponent implements OnInit {
 

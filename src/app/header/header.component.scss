@@ -1,10 +1,12 @@
-@import '../colors.scss';
+@import '../../colors.scss';
 
 .sistify-header {
   background: $black;
   color: $white;
 
-  > .title { font-size: 38px }
+  > .title { 
+      font-size: 38px;
+    }
 
   > .profile {
         &:hover {

@@ -1,14 +1,20 @@
 <mat-card class='sistify-user-card'>
   <mat-card-header class='header'>
-    <mat-card-title class='title'>
-      {{ user?.display_name }}
+    <mat-card-title class='title'> 
+      <span class='text'>{{ user?.display_name }}</span>
     </mat-card-title>
     <mat-card-subtitle class='subtitle'>
       {{ user?.followers?.total > 0 ? 'user?.followers?.total' : 'No followers' }}
     </mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content fxLayout='column' class='content'>
-    <span>Country: {{ user?.country}}</span>
-    <span>Email: {{ user?.email }}</span>
+  <mat-card-content fxLayout='column' class='content content-container'>
+    <div class="country">
+      <span>Country: </span> 
+      <span class="text">{{ user?.country}}</span>
+    </div>
+    <div class="email">
+      <span>Email: </span>
+      <span class="text">{{ user?.email }}</span>
+    </div>
   </mat-card-content>
 </mat-card>

@@ -1,0 +1,14 @@
+@import '../../../../../../colors.scss';
+
+.sistify-new-playlist {
+  
+  > .header {
+      font-weight: lighter;
+      text-align: center;
+      color: $primary;
+    }
+
+  > .field {
+      width: 100%;
+    }
+}

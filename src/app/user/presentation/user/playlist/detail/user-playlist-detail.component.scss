@@ -1,3 +1,5 @@
-.sistify-playlist-detail__img {
-  max-height: 85%;
+@media (max-width: 960px) {
+  .mat-card {
+    max-width: 420px;
+  }
 }

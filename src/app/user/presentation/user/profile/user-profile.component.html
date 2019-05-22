@@ -8,5 +8,12 @@
     <span routerLink='user/playlists'> Return to playlists</span>
   </div>
   <h1 class="header"> User account </h1>
-  <sistify-user-card [user]='user'></sistify-user-card>
+  <div fxLayoutAlign='center'>
+    <sistify-user-card 
+      fxFlex='50'
+      fxFlex.lt-md='85' 
+      class="card"
+      [user]='user'>
+    </sistify-user-card>
+  </div>
 </div>

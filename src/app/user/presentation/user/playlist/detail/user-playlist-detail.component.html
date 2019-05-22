@@ -1,25 +1,26 @@
 <div
-  class="content-container"
+  class="content-container sistify-playlist-detail"
+  fxLayoutAlign='center'
   fxLayoutGap='16px'
   fxLayout='row'
   fxLayout.lt-md='column'>
-  <div fxflex='45'>
-    <mat-card>
-      <img
-      mat-card-image
-      src="{{playlist?.images[0]?.url}}"
-      class='sistify-playlist-detail__img'>
+  <div 
+    fxflex='0 1 calc(30% - 16px)'
+    fxLayoutAlign.lt-md='center'>
+    <mat-card class='card'>
+      <img class='image' mat-card-image src="{{playlist?.images[0]?.url}}">
       <mat-card-header>
         <mat-card-title>{{playlist?.name}}</mat-card-title>
-        <mat-card-subtitle>{{playlist?.owner.display_name}}</mat-card-subtitle>
         <mat-card-subtitle>Musics: {{playlist?.tracks?.total}}</mat-card-subtitle>
       </mat-card-header>
     </mat-card>
   </div>
-  <div fxFlex='55'>
-    <div *ngIf='(tracks$ | async) as tracks' fxFlex='100'>
+  <div 
+    fxFlex='0 1 calc(70% - 16px)'
+    class='tracks'>
+    <div *ngIf='(tracks$ | async) as tracks'>
       <div *ngFor='let track of tracks.items'>
-        <sistify-detail-music [item]='track'></sistify-detail-music>
+        <sistify-track-card [item]='track'></sistify-track-card>
       </div>
     </div>
   </div>

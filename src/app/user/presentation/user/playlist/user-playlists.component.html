@@ -1,0 +1,15 @@
+<div class='content-container user-playlists'>
+  <h1 class="header"> User playlists </h1>
+  <div 
+    fxLayout='row wrap'
+    fxLayout.lt-sm='column'
+    fxLayoutGap='16px' *ngIf='(playlists$ | async) as playlists'>
+    <div
+      fxFlex='0 1 calc(20% - 16px)'
+      fxFlex.lt-md='0 1 calc(33.3% - 16px)'
+      class='list'
+      *ngFor='let playlist of playlists.items'>
+      <sistify-playlist-card class='item' [playlist]='playlist'></sistify-playlist-card>
+    </div>
+  </div>
+</div>

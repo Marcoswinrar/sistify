@@ -5,9 +5,11 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'sistify-playlist-card',
-  templateUrl: './playlist-card.component.html'
+  templateUrl: './playlist-card.component.html',
+  styleUrls: ['./playlist-card.component.scss']
 })
 export class PlaylistCardComponent {
+  
   @Input() playlist: Playlist;
 
   constructor(private router: Router) { }

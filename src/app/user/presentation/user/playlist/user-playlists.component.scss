@@ -1,0 +1,10 @@
+@import '../../../../../colors.scss';
+
+.user-playlists {
+
+  > .header {
+      text-align: center;
+      font-weight: lighter;
+      color: $primary
+  }
+}

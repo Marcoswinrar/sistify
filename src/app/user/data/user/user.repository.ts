@@ -45,7 +45,7 @@ export class UserRepository {
   getMenus(): Observable<Menu[]> {
     return of([
       new Menu('Playlists', '/user/playlists'),
-      new Menu('New', '/user/new')
+      new Menu('New playlist', '/user/new')
     ]);
   }
 

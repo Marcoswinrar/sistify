@@ -1,4 +1,4 @@
-@import '../../../../colors.scss';
+@import '../../../../../colors.scss';
 
 .user-profile {
 
@@ -13,5 +13,7 @@
 
   > .header {
     font-weight: lighter;
+    text-align: center;
+    color: $primary;
   }
 }

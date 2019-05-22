@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { UserPlaylistComponent } from './user/playlist/user-playlist.component';
+import { UserPlaylistComponent } from './user/playlist/user-playlists.component';
 import { UserNewPlaylistComponent } from './user/playlist/new/user-new.playlist.component';
 import { UserComponent } from './initial-page/user.component';
 import { LoggedInGuard } from 'src/app/core/auth/guards/logged-in.guard';
