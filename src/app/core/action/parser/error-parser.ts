@@ -3,6 +3,9 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class ErrorParser {
 
   static parseError(message: HttpErrorResponse): string {
-      return message.error;
+    /**
+     * My god xd;
+     * */  
+    return message.error.error.message;
   }
 }

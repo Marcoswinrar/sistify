@@ -44,70 +44,88 @@
       <segment state="translated">
         <source> User playlists </source>
       <target> Suas playlists </target></segment>
-    </unit><unit id="6550287183367517925">
+    </unit><unit id="5737030863694016854">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:2</note>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:2,4</note>
       </notes>
       <segment state="translated">
-        <source>Create new playlist</source>
-      <target>Criar nova playlist</target></segment>
+        <source>
+    Create new playlist
+  </source>
+      <target>
+    Criar nova playlist
+  </target></segment>
     </unit><unit id="1496587778701918525">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:14</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:16</note></notes>
       <segment state="translated">
         <source>Name of playlist</source>
       <target>Nome da playlist</target></segment>
     </unit><unit id="3793494477096132755">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:21</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:23</note></notes>
       <segment state="translated">
         <source>Type one description</source>
       <target>Escreva algo aqui</target></segment>
     </unit><unit id="4061280316996523748">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:24</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:27</note></notes>
       <segment state="translated">
         <source>Select type of your playlist.</source>
       <target>Selecione o tipo da sua playlist.</target></segment>
-    </unit><unit id="732235104355602865">
+    </unit><unit id="6227074537950034223">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:28,30</note>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:32,34</note>
       </notes>
       <segment state="translated">
         <source>
-          Public
-        </source>
+            Public
+          </source>
       <target>
-          Pública
-        </target></segment>
-    </unit><unit id="1727227748580194173">
+            Pública
+          </target></segment>
+    </unit><unit id="2270262422274323044">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:31,33</note>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:35,37</note>
       </notes>
       <segment state="translated">
         <source>
-          Private
-        </source>
+            Private
+          </source>
       <target>
-          Privada
-        </target></segment>
+            Privada
+          </target></segment>
     </unit><unit id="5674286808255988565">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:36</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:40</note></notes>
       <segment state="translated">
         <source>Create</source>
       <target>Criar</target></segment>
     </unit><unit id="2159130950882492111">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:37</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:41</note></notes>
       <segment state="translated">
         <source>Cancel</source>
       <target>Cancelar</target></segment>
+    </unit><unit id="5942345885827124670">
+      <notes>
+        <note category="location">app/user/presentation/user/profile/user-profile.component.html:8</note>
+      </notes>
+      <segment state="translated">
+        <source> Return to playlists</source>
+      <target> Retornar para as playlists</target></segment>
+    </unit><unit id="5642997164958359879">
+      <notes>
+        <note category="location">app/user/presentation/user/profile/user-profile.component.html:10</note>
+      </notes>
+      <segment state="translated">
+        <source> User account </source>
+      <target> Perfil do Usuário </target></segment>
     </unit><unit id="807956815675048522">
       <notes>
         <note category="location">app/user/presentation/card/user-card/user-card.component.html:12</note>
@@ -122,13 +140,34 @@
       <segment state="translated">
         <source>Email: </source>
       <target>Email: </target></segment>
+    </unit><unit id="1035734413919296">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/actions/playlist-detail-action.component.html:7</note>
+      </notes>
+      <segment state="translated">
+        <source>Add music</source>
+      <target>Adicionar música</target></segment>
+    </unit><unit id="104404386496394770">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/actions/playlist-detail-action.component.html:11</note>
+      </notes>
+      <segment state="translated">
+        <source>Delete playlist</source>
+      <target>Deletar playlist</target></segment>
     </unit><unit id="1460393615793666963">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:14</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:17</note></notes>
       <segment state="translated">
         <source>Musics: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></source>
       <target>Musicas: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></target></segment>
+    </unit><unit id="7097386957131154212">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:34</note>
+      </notes>
+      <segment state="translated">
+        <source>No tracks for this playlist.</source>
+      <target>Não há musicas nesta playlist.</target></segment>
     </unit><unit id="7110403100813919208">
       <notes>
         <note category="location">app/user/presentation/card/track-card/track-card.component.html:6,8</note>

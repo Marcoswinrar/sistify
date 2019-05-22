@@ -12,5 +12,6 @@ export abstract class UserPresenter {
   abstract loadPlaylists(): Observable<PlaylistList>;
   abstract loadPlaylist(id: string): Observable<Playlist>;
   abstract loadTracks(url: string): Observable<any>;
-  abstract loadDeleteTracks(url: string, tracks: any);
+  abstract savePlaylist(userId: string, playlist: Playlist): Observable<Playlist>;
+  abstract clearTracks(playlistId: string, tracks: any): Observable<any>;
 }

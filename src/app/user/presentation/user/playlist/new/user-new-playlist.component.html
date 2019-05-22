@@ -1,5 +1,7 @@
 <div class="content-container sistify-new-playlist">
-  <h1 i18n class="header">Create new playlist</h1>
+  <h1 i18n class="header">
+    Create new playlist
+  </h1>
   <div class="form" fxLayoutAlign='center center'>
     <form
       fxFlex='85'
@@ -7,34 +9,37 @@
       fxLayout='column'
       class="form"
       [formGroup]='playlistForm'>
-      <mat-form-field class="field">
+      <mat-form-field class="field" color='accent'>
         <input
           matInput
           i18n-placeholder
           placeholder="Name of playlist"
           formControlName='name'>
       </mat-form-field>
-      <mat-form-field class="field">
+      <mat-form-field class="field" color='accent'>
         <textarea
           matInput
           i18n-placeholder
           placeholder="Type one description"
           formControlName='description'></textarea>
       </mat-form-field>
-      <label i18n>Select type of your playlist.</label>
-      <mat-radio-group
-        fxLayoutGap='8px'
-        formControlName="public">
-        <mat-radio-button i18n [value]="true">
-          Public
-        </mat-radio-button>
-        <mat-radio-button i18n [value]="false">
-          Private
-        </mat-radio-button>
-      </mat-radio-group>
-      <div class="buttons">
-        <button i18n mat-raised-button>Create</button>
-        <button i18n mat-raised-button>Cancel</button>
+      <div class="radio-group" fxLayout='column' fxLayoutGap='16px'>
+        <label i18n>Select type of your playlist.</label>
+        <mat-radio-group
+          fxLayoutGap='8px'
+          fxLayoutAlign.lt-md='center'
+          formControlName="public">
+          <mat-radio-button i18n [value]="true">
+            Public
+          </mat-radio-button>
+          <mat-radio-button i18n [value]="false">
+            Private
+          </mat-radio-button>
+        </mat-radio-group>
+        <div class="buttons" fxLayoutGap='8px' fxLayoutAlign.lt-md='center'>
+          <button fxFlex='15' i18n mat-raised-button (click)='save()'>Create</button>
+          <a i18n mat-raised-button routerLink='/user/playlists'>Cancel</a>
+        </div>
       </div>
     </form>
   </div>

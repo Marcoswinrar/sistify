@@ -1,5 +1,8 @@
 <mat-card class='sistify-playlist-card' (click)='showPlaylist()'>
-  <img mat-card-image src="{{playlist.images[0]?.url}}">
+  <img 
+    mat-card-image 
+    src="{{playlist.images[0]?.url ? 
+    playlist.images[0]?.url : '../../../../../../../assets/default.png' }}">
   <mat-card-header>
     <mat-card-title>{{playlist.name}}</mat-card-title>
     <mat-card-subtitle>{{playlist.public ? 'Public' : 'Private'}}</mat-card-subtitle>

@@ -15,7 +15,8 @@ const routes: Routes = [
     children: [
       { path: 'playlists', component: UserPlaylistComponent, canActivate: [LoggedInGuard] },
       { path: 'new', component: UserNewPlaylistComponent, canActivate: [LoggedInGuard] },
-      { path: 'playlists/:id', component: UserPlaylistDetailComponent , canActivate: [LoggedInGuard] }
+      { path: 'playlists/:id', component: UserPlaylistDetailComponent , canActivate: [LoggedInGuard] },
+      { path: 'playlists/:id/edit', component: UserNewPlaylistComponent, canActivate: [LoggedInGuard]}
     ]
   },
   {

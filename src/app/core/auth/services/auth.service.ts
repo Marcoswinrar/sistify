@@ -12,7 +12,7 @@ export class AuthService {
   private readonly redirectUri = environment.redirect_uri;
   private readonly responseType = 'token';
   private readonly authorizationUrl = environment.authorization_url;
-  private readonly scope = 'playlist-read-private user-read-email playlist-modify-public';
+  private readonly scope = 'playlist-modify-private playlist-modify-public user-read-email playlist-read-private';
 
   /**
    * Redirect user to external authentication

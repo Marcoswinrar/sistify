@@ -15,6 +15,7 @@ import { PlaylistCardComponent } from './card/playlist-card/playlist-card.compon
 import { UserPlaylistDetailComponent } from './user/playlist/detail/user-playlist-detail.component';
 import { UserInterceptorModule } from 'src/app/core/interceptors/user-interceptor.module';
 import { TrackCardComponent } from './card/track-card/track-card.component';
+import { PlaylistDetailActionComponent } from './user/playlist/detail/actions/playlist.detail-action.component';
 
 @NgModule({
   imports: [
@@ -31,8 +32,9 @@ import { TrackCardComponent } from './card/track-card/track-card.component';
     UserProfileComponent,
     UserCardComponent,
     PlaylistCardComponent,
+    PlaylistDetailActionComponent,
     UserPlaylistDetailComponent,
-    TrackCardComponent
+    TrackCardComponent,
   ],
   providers: [
     {

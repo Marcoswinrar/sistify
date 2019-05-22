@@ -1,26 +1,32 @@
 # Sistify
 
+Amazing app to consumes spotify data [Demo](https://sistify.netlify.com)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
-## Development server
+## Aplicação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A aplicação está internacionalizada.  
 
-## Code scaffolding
+Rodar `npm run pt` para português.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Rodar `npm run en` para inglês.
 
-## Build
+## Testes
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng test` para executar os testes criados para o parser.
 
-## Running unit tests
+## Arquitetura 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Fora utilizada arquitetura clean(Heaxonal)  para o modulo de usuário.
 
-## Running end-to-end tests
+Contendo três camadas:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Presentation(Camada mais externa de UI da app).
+
+Domain(Aqui fica toda regra de dominio(negocíos) e a camada mais isolada e mais importante pois contem os modelos de negocío).
+
+Data(Toda parte de comunicação externa com dados, base e serviços REST).
 
 ## Further help
 

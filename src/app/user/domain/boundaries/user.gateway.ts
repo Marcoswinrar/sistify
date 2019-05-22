@@ -12,5 +12,6 @@ export abstract class UserGateway {
   abstract getPlaylists(): Observable<PlaylistList>;
   abstract getPlaylist(id: string): Observable<Playlist>;
   abstract getTracks(url: string): Observable<any>;
-  abstract deleteTracks(url: string, tracks: any);
+  abstract addPlaylist(userId: string, playlist: Playlist): Observable<Playlist>;
+  abstract deleteTracks(playlistId: string, tracks: any): Observable<any>;
 }

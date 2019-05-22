@@ -44,70 +44,88 @@
       <segment state="final">
         <source> User playlists </source>
       <target> User playlists </target></segment>
-    </unit><unit id="6550287183367517925">
+    </unit><unit id="5737030863694016854">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:2</note>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:2,4</note>
       </notes>
       <segment state="final">
-        <source>Create new playlist</source>
-      <target>Create new playlist</target></segment>
+        <source>
+    Create new playlist
+  </source>
+      <target>
+    Create new playlist
+  </target></segment>
     </unit><unit id="1496587778701918525">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:14</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:16</note></notes>
       <segment state="final">
         <source>Name of playlist</source>
       <target>Name of playlist</target></segment>
     </unit><unit id="3793494477096132755">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:21</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:23</note></notes>
       <segment state="final">
         <source>Type one description</source>
       <target>Type one description</target></segment>
     </unit><unit id="4061280316996523748">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:24</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:27</note></notes>
       <segment state="final">
         <source>Select type of your playlist.</source>
       <target>Select type of your playlist.</target></segment>
-    </unit><unit id="732235104355602865">
+    </unit><unit id="6227074537950034223">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:28,30</note>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:32,34</note>
       </notes>
       <segment state="final">
         <source>
-          Public
-        </source>
+            Public
+          </source>
       <target>
-          Public
-        </target></segment>
-    </unit><unit id="1727227748580194173">
+            Public
+          </target></segment>
+    </unit><unit id="2270262422274323044">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:31,33</note>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:35,37</note>
       </notes>
       <segment state="final">
         <source>
-          Private
-        </source>
+            Private
+          </source>
       <target>
-          Private
-        </target></segment>
+            Private
+          </target></segment>
     </unit><unit id="5674286808255988565">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:36</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:40</note></notes>
       <segment state="final">
         <source>Create</source>
       <target>Create</target></segment>
     </unit><unit id="2159130950882492111">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:37</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:41</note></notes>
       <segment state="final">
         <source>Cancel</source>
       <target>Cancel</target></segment>
+    </unit><unit id="5942345885827124670">
+      <notes>
+        <note category="location">app/user/presentation/user/profile/user-profile.component.html:8</note>
+      </notes>
+      <segment state="final">
+        <source> Return to playlists</source>
+      <target> Return to playlists</target></segment>
+    </unit><unit id="5642997164958359879">
+      <notes>
+        <note category="location">app/user/presentation/user/profile/user-profile.component.html:10</note>
+      </notes>
+      <segment state="final">
+        <source> User account </source>
+      <target> User account </target></segment>
     </unit><unit id="807956815675048522">
       <notes>
         <note category="location">app/user/presentation/card/user-card/user-card.component.html:12</note>
@@ -122,13 +140,34 @@
       <segment state="final">
         <source>Email: </source>
       <target>Email: </target></segment>
+    </unit><unit id="1035734413919296">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/actions/playlist-detail-action.component.html:7</note>
+      </notes>
+      <segment state="final">
+        <source>Add music</source>
+      <target>Add music</target></segment>
+    </unit><unit id="104404386496394770">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/actions/playlist-detail-action.component.html:11</note>
+      </notes>
+      <segment state="final">
+        <source>Delete playlist</source>
+      <target>Delete playlist</target></segment>
     </unit><unit id="1460393615793666963">
       <notes>
-        <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:14</note>
-      </notes>
+        
+      <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:17</note></notes>
       <segment state="final">
         <source>Musics: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></source>
       <target>Musics: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></target></segment>
+    </unit><unit id="7097386957131154212">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:34</note>
+      </notes>
+      <segment state="final">
+        <source>No tracks for this playlist.</source>
+      <target>No tracks for this playlist.</target></segment>
     </unit><unit id="7110403100813919208">
       <notes>
         <note category="location">app/user/presentation/card/track-card/track-card.component.html:6,8</note>

@@ -15,7 +15,9 @@
       </div>
     </div>
     <div>
-      <mat-icon>delete</mat-icon>
+      <button mat-icon-button (click)='deleteTrack(item.track.uri)'>
+        <mat-icon>delete</mat-icon>
+      </button>
     </div>
   </div>
 </mat-card>

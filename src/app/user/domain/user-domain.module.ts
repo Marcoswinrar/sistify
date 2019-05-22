@@ -5,7 +5,8 @@ import { LoadUserInteractor } from './interactors/load-user.interactor';
 import { LoadUserPlaylistsInteractor } from './interactors/load-user-playlists.interactor';
 import { LoadPlaylistInteractor } from './interactors/load-playlist.interactor';
 import { LoadTracksInteractor } from './interactors/load-tracks.interactor';
-import { DeleteTracksInteractor } from './interactors/delete-tracks.interactor';
+import { SavePlaylistInteractor } from './interactors/save-playlist.interactor';
+import { ClearTracksInteractor } from './interactors/clear-tracks.interactor';
 
 @NgModule({
   providers: [
@@ -14,7 +15,8 @@ import { DeleteTracksInteractor } from './interactors/delete-tracks.interactor';
     LoadUserPlaylistsInteractor,
     LoadPlaylistInteractor,
     LoadTracksInteractor,
-    DeleteTracksInteractor
+    SavePlaylistInteractor,
+    ClearTracksInteractor
   ]
 })
 export class UserDomainModule { }

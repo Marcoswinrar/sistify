@@ -26,7 +26,7 @@ export class DefaultActionService implements ActionService {
 
   onError(error: HttpErrorResponse): Observable<void> {
     const message = ErrorParser.parseError(error);
-
+    console.log(message);
     if (!message) { return of<void>(); }
     return this.dialog.errorDialog(message).afterClosed();
   }

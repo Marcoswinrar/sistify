@@ -1,0 +1,13 @@
+<button mat-icon-button [matMenuTriggerFor]="action">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #action="matMenu">
+  <button mat-menu-item>
+    <mat-icon>music_note</mat-icon>
+    <span i18n>Add music</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>delete</mat-icon>
+    <span i18n>Delete playlist</span>
+  </button>
+</mat-menu>

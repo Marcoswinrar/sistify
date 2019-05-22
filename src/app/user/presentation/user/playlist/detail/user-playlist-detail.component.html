@@ -8,20 +8,36 @@
     fxflex='0 1 calc(30% - 16px)'
     fxLayoutAlign.lt-md='center'>
     <mat-card class='card'>
-      <img class='image' mat-card-image src="{{playlist?.images[0]?.url}}">
+      <img class='image' 
+        mat-card-image 
+        src="{{playlist?.images[0]?.url ? 
+          playlist?.images[0]?.url : '../../../../../../../assets/default.png' }}">
       <mat-card-header>
         <mat-card-title>{{playlist?.name}}</mat-card-title>
         <mat-card-subtitle i18n>Musics: {{playlist?.tracks?.total}}</mat-card-subtitle>
       </mat-card-header>
+      <mat-card-content>
+        <playlist-detail-action></playlist-detail-action>
+      </mat-card-content>
     </mat-card>
   </div>
   <div
     fxFlex='0 1 calc(70% - 16px)'
     class='tracks'>
     <div *ngIf='(tracks$ | async) as tracks'>
-      <div *ngFor='let track of tracks.items'>
-        <sistify-track-card [item]='track'></sistify-track-card>
+      <div *ngIf='tracks.length; else noTracks'>
+        <div *ngFor='let track of tracks.items'>
+          <sistify-track-card [item]='track'></sistify-track-card>
+        </div>
       </div>
+      <ng-template #noTracks>
+        <h1 i18n class="header">No tracks for this playlist.</h1>
+        <div fxLayoutAlign='center'>
+          <mat-icon class="no-track-icon">
+            sentiment_very_dissatisfied
+          </mat-icon>
+        </div>
+      </ng-template>
     </div>
   </div>
 </div>

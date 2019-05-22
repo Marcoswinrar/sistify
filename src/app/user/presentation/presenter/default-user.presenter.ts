@@ -6,12 +6,13 @@ import { LoadMenusInteractor } from '../../domain/interactors/load-menus.interac
 import { LoadUserPlaylistsInteractor } from '../../domain/interactors/load-user-playlists.interactor';
 import { LoadPlaylistInteractor } from '../../domain/interactors/load-playlist.interactor';
 import { LoadTracksInteractor } from '../../domain/interactors/load-tracks.interactor';
-import { DeleteTracksInteractor } from '../../domain/interactors/delete-tracks.interactor';
+import { SavePlaylistInteractor } from '../../domain/interactors/save-playlist.interactor';
+import { Playlist } from '../../domain/models/playlist/playlist';
+import { ClearTracksInteractor } from '../../domain/interactors/clear-tracks.interactor';
 
 /**
  * This is an external layer.The UI of app.
- * In this presenter you apply the logic of
- * component(filters, sort, etc) if necessary.
+ * To communicate with interactors(adapters).
  */
 @Injectable()
 export class DefaultUserPresenter implements UserPresenter {
@@ -21,8 +22,9 @@ export class DefaultUserPresenter implements UserPresenter {
     private menus: LoadMenusInteractor,
     private playlists: LoadUserPlaylistsInteractor,
     private playlist: LoadPlaylistInteractor,
+    private save: SavePlaylistInteractor,
     private tracks: LoadTracksInteractor,
-    private deleteTracks: DeleteTracksInteractor
+    private clear: ClearTracksInteractor
   ) { }
 
   loadUser() {
@@ -45,7 +47,11 @@ export class DefaultUserPresenter implements UserPresenter {
     return this.tracks.loadTracks(url);
   }
 
-  loadDeleteTracks(url: string, tracks: any) {
-    this.deleteTracks.deleteTracks(url, tracks);
+  savePlaylist(userId: string, playlist: Playlist) {
+    return this.save.savePlaylist(userId, playlist);
+  }
+
+  clearTracks(playlistId: string, tracks: any) {
+    return this.clear.clearTracks(playlistId, tracks);
   }
 }

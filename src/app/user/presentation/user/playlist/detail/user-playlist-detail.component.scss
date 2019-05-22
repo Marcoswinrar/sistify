@@ -1,5 +1,20 @@
+@import '../../../../../../colors.scss'; 
+
 @media (max-width: 960px) {
   .mat-card {
     max-width: 420px;
   }
+}
+
+.header {
+  text-align: center;
+  font-weight: lighter;
+  color: $primary;
+}
+
+.no-track-icon {
+  color: $primary;
+  font-size: 120px;
+  width: 120px;
+  height: 120px;
 }
