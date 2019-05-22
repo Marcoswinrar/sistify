@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="en">
+  <file original="ng.template" id="ngi18n">
+    <unit id="4915431133669985304">
+      <notes>
+        <note category="location">app/header/header.component.html:18</note>
+      </notes>
+      <segment state="final">
+        <source>Profile</source>
+      <target>Profile</target></segment>
+    </unit><unit id="4086606389696938932">
+      <notes>
+        <note category="location">app/header/header.component.html:28</note>
+      </notes>
+      <segment state="final">
+        <source>Account</source>
+      <target>Account</target></segment>
+    </unit><unit id="3797778920049399855">
+      <notes>
+        <note category="location">app/header/header.component.html:33</note>
+      </notes>
+      <segment state="final">
+        <source>Logout</source>
+      <target>Logout</target></segment>
+    </unit><unit id="61765332428476633">
+      <notes>
+        <note category="location">app/login/login.component.html:3</note>
+      </notes>
+      <segment state="final">
+        <source> Amazing app to consume spotify data.</source>
+      <target> Amazing app to consume spotify data.</target></segment>
+    </unit>
+    <unit id="3880606408233917166">
+      <notes>
+        <note category="location">app/login/login.component.html:6</note>
+      </notes>
+      <segment state="final">
+        <source>Login with spotify</source>
+      <target>Login with spotify</target></segment>
+    </unit><unit id="9077025933492295305">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/user-playlists.component.html:2</note>
+      </notes>
+      <segment state="final">
+        <source> User playlists </source>
+      <target> User playlists </target></segment>
+    </unit><unit id="6550287183367517925">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:2</note>
+      </notes>
+      <segment state="final">
+        <source>Create new playlist</source>
+      <target>Create new playlist</target></segment>
+    </unit><unit id="1496587778701918525">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:14</note>
+      </notes>
+      <segment state="final">
+        <source>Name of playlist</source>
+      <target>Name of playlist</target></segment>
+    </unit><unit id="3793494477096132755">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:21</note>
+      </notes>
+      <segment state="final">
+        <source>Type one description</source>
+      <target>Type one description</target></segment>
+    </unit><unit id="4061280316996523748">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:24</note>
+      </notes>
+      <segment state="final">
+        <source>Select type of your playlist.</source>
+      <target>Select type of your playlist.</target></segment>
+    </unit><unit id="732235104355602865">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:28,30</note>
+      </notes>
+      <segment state="final">
+        <source>
+          Public
+        </source>
+      <target>
+          Public
+        </target></segment>
+    </unit><unit id="1727227748580194173">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:31,33</note>
+      </notes>
+      <segment state="final">
+        <source>
+          Private
+        </source>
+      <target>
+          Private
+        </target></segment>
+    </unit><unit id="5674286808255988565">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:36</note>
+      </notes>
+      <segment state="final">
+        <source>Create</source>
+      <target>Create</target></segment>
+    </unit><unit id="2159130950882492111">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:37</note>
+      </notes>
+      <segment state="final">
+        <source>Cancel</source>
+      <target>Cancel</target></segment>
+    </unit><unit id="807956815675048522">
+      <notes>
+        <note category="location">app/user/presentation/card/user-card/user-card.component.html:12</note>
+      </notes>
+      <segment state="final">
+        <source>Country: </source>
+      <target>Country: </target></segment>
+    </unit><unit id="4374589633190318100">
+      <notes>
+        <note category="location">app/user/presentation/card/user-card/user-card.component.html:16</note>
+      </notes>
+      <segment state="final">
+        <source>Email: </source>
+      <target>Email: </target></segment>
+    </unit><unit id="1460393615793666963">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:14</note>
+      </notes>
+      <segment state="final">
+        <source>Musics: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></source>
+      <target>Musics: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></target></segment>
+    </unit><unit id="7110403100813919208">
+      <notes>
+        <note category="location">app/user/presentation/card/track-card/track-card.component.html:6,8</note>
+      </notes>
+      <segment state="final">
+        <source>
+      Release Date: <ph id="0" equiv="INTERPOLATION" disp="{{ item.track.album.release_date | date: 'shortDate'}}"/>
+    </source>
+      <target>
+      Release Date: <ph id="0" equiv="INTERPOLATION" disp="{{ item.track.album.release_date | date: 'shortDate'}}"/>
+    </target></segment>
+    </unit><unit id="4683719168843791542">
+      <notes>
+        <note category="location">app/user/presentation/card/track-card/track-card.component.html:12</note>
+      </notes>
+      <segment state="final">
+        <source>Artist's: </source>
+      <target>Artist's: </target></segment>
+    </unit><unit id="6453357809656115500">
+      <notes>
+        <note category="location">app/user/presentation/card/track-card/track-card.component.html:14</note>
+      </notes>
+      <segment state="final">
+        <source> <ph id="0" equiv="INTERPOLATION" disp="{{ artist.name }}"/> </source>
+      <target> <ph id="0" equiv="INTERPOLATION" disp="{{ artist.name }}"/> </target></segment>
+    </unit>
+  </file>
+</xliff>

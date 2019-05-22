@@ -1,4 +1,4 @@
-import { Tracks } from '../track/tracks';
+import { User } from '../user';
 
 export class Playlist {
 
@@ -8,5 +8,7 @@ export class Playlist {
   description: string;
   public: boolean;
   images: any;
-  tracks: Tracks;
+  tracks: any;
+  owner: User;
+
 }

@@ -1,38 +1,40 @@
 <div class="content-container sistify-new-playlist">
-  <h1 class="header">Create new playlist</h1>
+  <h1 i18n class="header">Create new playlist</h1>
   <div class="form" fxLayoutAlign='center center'>
-    <form 
+    <form
       fxFlex='85'
       fxFlex.gt-sm='50'
-      fxLayout='column' 
+      fxLayout='column'
       class="form"
-      [formGroup]='playlistForm'> 
+      [formGroup]='playlistForm'>
       <mat-form-field class="field">
-        <input 
+        <input
           matInput
-          placeholder="Name of playlist" 
+          i18n-placeholder
+          placeholder="Name of playlist"
           formControlName='name'>
       </mat-form-field>
       <mat-form-field class="field">
-        <textarea 
+        <textarea
           matInput
-          placeholder="Type one description" 
+          i18n-placeholder
+          placeholder="Type one description"
           formControlName='description'></textarea>
       </mat-form-field>
-      <label>Select type of your playlist.</label>
+      <label i18n>Select type of your playlist.</label>
       <mat-radio-group
         fxLayoutGap='8px'
         formControlName="public">
-        <mat-radio-button [value]="true">
+        <mat-radio-button i18n [value]="true">
           Public
         </mat-radio-button>
-        <mat-radio-button [value]="false">
+        <mat-radio-button i18n [value]="false">
           Private
         </mat-radio-button>
       </mat-radio-group>
       <div class="buttons">
-        <button mat-raised-button>Create</button>
-        <button mat-raised-button>Cancel</button>
+        <button i18n mat-raised-button>Create</button>
+        <button i18n mat-raised-button>Cancel</button>
       </div>
     </form>
   </div>

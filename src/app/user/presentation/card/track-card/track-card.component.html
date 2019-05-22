@@ -3,15 +3,15 @@
     <mat-card-title fxLayoutAlign='start start' fxFlex>
       {{ item.track.name }}
     </mat-card-title>
-    <mat-card-subtitle fxLayoutAlign='end end'>
+    <mat-card-subtitle i18n fxLayoutAlign='end end'>
       Release Date: {{ item.track.album.release_date | date: 'shortDate'}}
     </mat-card-subtitle>
   </div>
   <div fxLayout='row'>
     <div fxLayout='column' fxFlex>
-      <span>Artist's: </span>
+      <span i18n>Artist's: </span>
       <div *ngFor='let artist of (item.track.album.artists)'>
-        <span> {{ artist.name }} </span>
+        <span i18n> {{ artist.name }} </span>
       </div>
     </div>
     <div>

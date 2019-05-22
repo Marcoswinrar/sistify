@@ -6,7 +6,7 @@ import * as Mat from '@angular/material';
   exports: [
     FlexLayoutModule, Mat.MatToolbarModule, Mat.MatButtonModule, Mat.MatTabsModule, Mat.MatIconModule,
     Mat.MatMenuModule, Mat.MatCardModule, Mat.MatTooltipModule, Mat.MatExpansionModule, Mat.MatInputModule,
-    Mat.MatRadioModule
+    Mat.MatRadioModule, Mat.MatDialogModule
   ]
 })
 export class MaterialUiModule { }

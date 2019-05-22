@@ -13,6 +13,9 @@
       "app",
       "kebab-case",
       "sistify"
+    ],
+    "ban-types": [
+      true
     ]
   }
 }

@@ -6,7 +6,6 @@ import { finalize } from 'rxjs/operators';
 
 import { UserPresenter } from '../../../../domain/boundaries/user.presenter';
 import { Playlist } from '../../../../domain/models/playlist/playlist';
-import { Tracks } from '../../../../domain/models/track/tracks';
 
 @Component({
   templateUrl: './user-playlist-detail.component.html',
@@ -15,7 +14,7 @@ import { Tracks } from '../../../../domain/models/track/tracks';
 export class UserPlaylistDetailComponent implements OnInit {
 
   playlist: Playlist;
-  tracks$: Observable<Tracks>;
+  tracks$: Observable<any>;
 
   constructor(
     private activatedRoute: ActivatedRoute,

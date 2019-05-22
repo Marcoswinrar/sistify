@@ -5,21 +5,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './core/auth/auth.module';
-import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
 import { MaterialUiModule } from './core/material/material-ui.module';
+import { DialogModule } from './core/dialog/dialog.module';
+import { LoginModule } from './login/login.module';
+import { HeaderModule } from './header/header.module';
+import { ActionModule } from './core/action/action.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AuthModule,
     AppRoutingModule,
     MaterialUiModule,
+    DialogModule,
+    ActionModule,
+    LoginModule,
+    HeaderModule,
     BrowserAnimationsModule
   ],
   providers: [],

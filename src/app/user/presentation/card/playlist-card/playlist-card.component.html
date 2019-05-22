@@ -3,6 +3,6 @@
   <mat-card-header>
     <mat-card-title>{{playlist.name}}</mat-card-title>
     <mat-card-subtitle>{{playlist.public ? 'Public' : 'Private'}}</mat-card-subtitle>
-    <mat-card-subtitle>{{playlist.owner.display_name}}</mat-card-subtitle>
+    <mat-card-subtitle>{{playlist.owner?.display_name}}</mat-card-subtitle>
   </mat-card-header>
 </mat-card>

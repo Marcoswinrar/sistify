@@ -1,6 +1,6 @@
 <mat-card class='sistify-user-card'>
   <mat-card-header class='header'>
-    <mat-card-title class='title'> 
+    <mat-card-title class='title'>
       <span class='text'>{{ user?.display_name }}</span>
     </mat-card-title>
     <mat-card-subtitle class='subtitle'>
@@ -9,11 +9,11 @@
   </mat-card-header>
   <mat-card-content fxLayout='column' class='content content-container'>
     <div class="country">
-      <span>Country: </span> 
+      <span i18n>Country: </span>
       <span class="text">{{ user?.country}}</span>
     </div>
     <div class="email">
-      <span>Email: </span>
+      <span i18n>Email: </span>
       <span class="text">{{ user?.email }}</span>
     </div>
   </mat-card-content>

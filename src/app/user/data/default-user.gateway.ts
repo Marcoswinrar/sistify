@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 import { UserGateway } from '../domain/boundaries/user.gateway';
 import { UserRepository } from './user/user.repository';
-import { Tracks } from '../domain/models/track/tracks';
 
 /**
  * Layer of data and gateway to provide information for interactors.
@@ -32,7 +31,7 @@ export class DefaultUserGateway implements UserGateway {
     return this.repository.getTracks(url);
   }
 
-  deleteTracks(url: string, tracks: Tracks[]) {
+  deleteTracks(url: string, tracks: any) {
     this.repository.deleteTracks(url, tracks);
   }
 }

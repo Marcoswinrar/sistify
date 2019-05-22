@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./playlist-card.component.scss']
 })
 export class PlaylistCardComponent {
-  
+
   @Input() playlist: Playlist;
 
   constructor(private router: Router) { }

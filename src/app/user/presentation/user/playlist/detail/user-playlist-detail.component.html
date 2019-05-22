@@ -4,18 +4,18 @@
   fxLayoutGap='16px'
   fxLayout='row'
   fxLayout.lt-md='column'>
-  <div 
+  <div
     fxflex='0 1 calc(30% - 16px)'
     fxLayoutAlign.lt-md='center'>
     <mat-card class='card'>
       <img class='image' mat-card-image src="{{playlist?.images[0]?.url}}">
       <mat-card-header>
         <mat-card-title>{{playlist?.name}}</mat-card-title>
-        <mat-card-subtitle>Musics: {{playlist?.tracks?.total}}</mat-card-subtitle>
+        <mat-card-subtitle i18n>Musics: {{playlist?.tracks?.total}}</mat-card-subtitle>
       </mat-card-header>
     </mat-card>
   </div>
-  <div 
+  <div
     fxFlex='0 1 calc(70% - 16px)'
     class='tracks'>
     <div *ngIf='(tracks$ | async) as tracks'>

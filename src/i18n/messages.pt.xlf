@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="pt">
+  <file original="ng.template" id="ngi18n">
+    <unit id="4915431133669985304">
+      <notes>
+        <note category="location">app/header/header.component.html:18</note>
+      </notes>
+      <segment state="translated">
+        <source>Profile</source>
+      <target>Perfil</target></segment>
+    </unit><unit id="4086606389696938932">
+      <notes>
+        <note category="location">app/header/header.component.html:28</note>
+      </notes>
+      <segment state="translated">
+        <source>Account</source>
+      <target>Conta</target></segment>
+    </unit><unit id="3797778920049399855">
+      <notes>
+        <note category="location">app/header/header.component.html:33</note>
+      </notes>
+      <segment state="translated">
+        <source>Logout</source>
+      <target>Sair</target></segment>
+    </unit><unit id="61765332428476633">
+      <notes>
+        <note category="location">app/login/login.component.html:3</note>
+      </notes>
+      <segment state="translated">
+        <source> Amazing app to consume spotify data.</source>
+      <target> App incrível que consome os dados do spotify.</target></segment>
+    </unit>
+    <unit id="3880606408233917166">
+      <notes>
+        <note category="location">app/login/login.component.html:6</note>
+      </notes>
+      <segment state="translated">
+        <source>Login with spotify</source>
+      <target>Logar no spotify</target></segment>
+    </unit><unit id="9077025933492295305">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/user-playlists.component.html:2</note>
+      </notes>
+      <segment state="translated">
+        <source> User playlists </source>
+      <target> Suas playlists </target></segment>
+    </unit><unit id="6550287183367517925">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:2</note>
+      </notes>
+      <segment state="translated">
+        <source>Create new playlist</source>
+      <target>Criar nova playlist</target></segment>
+    </unit><unit id="1496587778701918525">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:14</note>
+      </notes>
+      <segment state="translated">
+        <source>Name of playlist</source>
+      <target>Nome da playlist</target></segment>
+    </unit><unit id="3793494477096132755">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:21</note>
+      </notes>
+      <segment state="translated">
+        <source>Type one description</source>
+      <target>Escreva algo aqui</target></segment>
+    </unit><unit id="4061280316996523748">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:24</note>
+      </notes>
+      <segment state="translated">
+        <source>Select type of your playlist.</source>
+      <target>Selecione o tipo da sua playlist.</target></segment>
+    </unit><unit id="732235104355602865">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:28,30</note>
+      </notes>
+      <segment state="translated">
+        <source>
+          Public
+        </source>
+      <target>
+          Pública
+        </target></segment>
+    </unit><unit id="1727227748580194173">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:31,33</note>
+      </notes>
+      <segment state="translated">
+        <source>
+          Private
+        </source>
+      <target>
+          Privada
+        </target></segment>
+    </unit><unit id="5674286808255988565">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:36</note>
+      </notes>
+      <segment state="translated">
+        <source>Create</source>
+      <target>Criar</target></segment>
+    </unit><unit id="2159130950882492111">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/new/user-new-playlist.component.html:37</note>
+      </notes>
+      <segment state="translated">
+        <source>Cancel</source>
+      <target>Cancelar</target></segment>
+    </unit><unit id="807956815675048522">
+      <notes>
+        <note category="location">app/user/presentation/card/user-card/user-card.component.html:12</note>
+      </notes>
+      <segment state="translated">
+        <source>Country: </source>
+      <target>País: </target></segment>
+    </unit><unit id="4374589633190318100">
+      <notes>
+        <note category="location">app/user/presentation/card/user-card/user-card.component.html:16</note>
+      </notes>
+      <segment state="translated">
+        <source>Email: </source>
+      <target>Email: </target></segment>
+    </unit><unit id="1460393615793666963">
+      <notes>
+        <note category="location">app/user/presentation/user/playlist/detail/user-playlist-detail.component.html:14</note>
+      </notes>
+      <segment state="translated">
+        <source>Musics: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></source>
+      <target>Musicas: <ph id="0" equiv="INTERPOLATION" disp="{{playlist?.tracks?.total}}"/></target></segment>
+    </unit><unit id="7110403100813919208">
+      <notes>
+        <note category="location">app/user/presentation/card/track-card/track-card.component.html:6,8</note>
+      </notes>
+      <segment state="translated">
+        <source>
+      Release Date: <ph id="0" equiv="INTERPOLATION" disp="{{ item.track.album.release_date | date: 'shortDate'}}"/>
+    </source>
+      <target>
+      Data de lançamento: <ph id="0" equiv="INTERPOLATION" disp="{{ item.track.album.release_date | date: 'shortDate'}}"/>
+    </target></segment>
+    </unit><unit id="4683719168843791542">
+      <notes>
+        <note category="location">app/user/presentation/card/track-card/track-card.component.html:12</note>
+      </notes>
+      <segment state="translated">
+        <source>Artist's: </source>
+      <target>Artistas: </target></segment>
+    </unit><unit id="6453357809656115500">
+      <notes>
+        <note category="location">app/user/presentation/card/track-card/track-card.component.html:14</note>
+      </notes>
+      <segment state="initial">
+        <source> <ph id="0" equiv="INTERPOLATION" disp="{{ artist.name }}"/> </source>
+      <target> <ph id="0" equiv="INTERPOLATION" disp="{{ artist.name }}"/> </target></segment>
+    </unit>
+  </file>
+</xliff>

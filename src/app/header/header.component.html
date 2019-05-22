@@ -15,17 +15,19 @@
         class='profile'
         (click)='changeArrowIndicator()'>
         <mat-icon class='button'>account_circle</mat-icon>
-        <span>Profile</span>
+        <span i18n>Profile</span>
         <mat-icon>
           {{ arrowIndicator ? 'arrow_drop_down' : 'arrow_drop_up'}}
         </mat-icon>
       </div>
       <mat-menu #sisMenu='matMenu'>
         <button
+          i18n
           mat-menu-item
           (click)='changeArrowIndicator()'
           routerLink='user/profile'>Account</button>
         <button
+          i18n
           mat-menu-item
           (click)='logout();
           changeArrowIndicator()'>Logout</button>
