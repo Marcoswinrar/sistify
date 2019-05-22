@@ -1,6 +1,6 @@
 # Sistify
 
-Amazing app to consumes spotify data [Demo](https://sistify.netlify.com)
+Amazing app to consumes spotify data. [Demo](https://sistify.netlify.com)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
@@ -18,13 +18,13 @@ Run `ng test` para executar os testes criados para o parser.
 
 ## Arquitetura 
 
-Fora utilizada arquitetura clean(Heaxonal)  para o modulo de usuário.
+Utilizado arquitetura clean(Hexagonal)  para o modulo de usuário.
 
 Contendo três camadas:
 
 Presentation(Camada mais externa de UI da app).
 
-Domain(Aqui fica toda regra de dominio(negocíos) e a camada mais isolada e mais importante pois contem os modelos de negocío).
+Domain(Aqui fica toda regra de domínio(negocios) e a camada mais isolada e mais importante).
 
 Data(Toda parte de comunicação externa com dados, base e serviços REST).
 
