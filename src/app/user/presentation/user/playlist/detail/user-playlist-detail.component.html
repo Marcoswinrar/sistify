@@ -8,9 +8,9 @@
     fxflex='0 1 calc(30% - 16px)'
     fxLayoutAlign.lt-md='center'>
     <mat-card class='card'>
-      <img class='image' 
-        mat-card-image 
-        src="{{playlist?.images[0]?.url ? 
+      <img class='image'
+        mat-card-image
+        src="{{playlist?.images[0]?.url ?
           playlist?.images[0]?.url : '../../../../../../../assets/default.png' }}">
       <mat-card-header>
         <mat-card-title>{{playlist?.name}}</mat-card-title>
@@ -25,7 +25,7 @@
     fxFlex='0 1 calc(70% - 16px)'
     class='tracks'>
     <div *ngIf='(tracks$ | async) as tracks'>
-      <div *ngIf='tracks.length; else noTracks'>
+      <div *ngIf='!tracks?.length; else noTracks'>
         <div *ngFor='let track of tracks.items'>
           <sistify-track-card [item]='track'></sistify-track-card>
         </div>
@@ -38,6 +38,5 @@
           </mat-icon>
         </div>
       </ng-template>
-    </div>
   </div>
 </div>
