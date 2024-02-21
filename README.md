@@ -1,6 +1,6 @@
 # Sistify
 
-Amazing app to consumes spotify data.
+App que consome as informações da API do spotify.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
